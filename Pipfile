@@ -5,9 +5,11 @@ name = "pypi"
 
 [packages]
 django = "==3.0.*"
-django-taggit = "==1.2.0"
-markdown = "==3.2.1"
-psycopg2-binary = "==2.8.4"
+pillow = "*"
+social-auth-app-django = "==3.1.0"
+django-extensions = "==2.2.5"
+werkzeug = "==0.16.0"
+pyopenssl = "*"
 
 [dev-packages]
 
