@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'django_extensions',
     'images.apps.ImagesConfig',
+    'actions.apps.ActionsConfig',
 
 ]
 
@@ -140,3 +141,14 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
 ]
+
+from django.urls import reverse_lazy
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u : reverse_lazy('user_detail', args=[u.username])
+}
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0

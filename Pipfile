@@ -12,6 +12,7 @@ werkzeug = "==0.16.0"
 pyopenssl = "*"
 certifi = "*"
 easy-thumbnails = "*"
+redis = "==3.4.1"
 
 [dev-packages]
 
