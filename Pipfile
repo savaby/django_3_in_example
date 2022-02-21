@@ -8,6 +8,7 @@ django = "==3.0.*"
 pillow = "*"
 celery = "==4.4.2"
 flower = "==0.9.3"
+weasyprint = "*"
 
 [dev-packages]
 
