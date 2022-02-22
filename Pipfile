@@ -9,6 +9,9 @@ pillow = "*"
 celery = "==4.4.2"
 flower = "==0.9.3"
 weasyprint = "*"
+django-rosetta = "*"
+django-parler = "*"
+redis = "==3.4.1"
 
 [dev-packages]
 
